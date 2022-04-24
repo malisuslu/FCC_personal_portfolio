@@ -1,0 +1,172 @@
+*, html, body{
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  float: right;
+  position: fixed;
+  background-color: #be3144;
+  border-bottom: black solid;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a, li{
+  text-decoration: none;
+  list-style: none;
+}
+
+#nav-link {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+#nav-link > a {
+  color: white;
+}
+
+#welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+#projects {
+  width: 100vw;
+  height: 100%;
+  text-align: center;
+  background: #45567d;
+}
+
+#projects > h2 {
+  width: 40%;
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  text-align: center;
+  color: white;
+  font-size: 2.6rem;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid white;
+  line-height: 1.4;
+}
+
+img {
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.project-tile {
+  display: grid;
+
+}
+
+.project {
+/*   height: 300px; */
+/*   width: 300px; */
+  max-width: 300px;
+  aspect-ratio: 1/1;
+  padding: 1%;
+  padding-bottom: 10px;
+  margin: 15px;
+}
+
+.project-title {
+  background: black;
+  width: 300px;
+  height: 30px;
+  color: white;
+  margin-top: 0;
+}
+
+.project-tile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#profile-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  text-align: center;
+}
+
+#prof-link-header {
+  color: white;
+  font-size: 50px;
+  margin: 20px;
+}
+
+.profile-link {
+  transition: transform 0.3s ease-out;
+}
+
+.profile-link:hover {
+  transform: translateY(16px);
+}
+
+#profile-link {
+  color: white;
+  font-size: 25px;
+  margin: 20px;
+}
+
+@media (max-width: 600px) {
+  #welcome-section {
+    margin-top: 50px;
+    height: 20vh;
+    width: 100vw;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 30px;
+    color: white;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  }
+
+   img {
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .project {
+  /*   height: 300px; */
+  /*   width: 300px; */
+    max-width: 300px;
+    aspect-ratio: 1/1;
+    padding: 1%;
+    padding-bottom: 10px;
+  }
+
+  .project-title {
+    background: black;
+    width: 300px;
+    height: 30px;
+    color: white;
+    margin-top: 0;
+  }
+  
+}
